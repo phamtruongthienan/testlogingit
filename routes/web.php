@@ -28,7 +28,7 @@ Route::post('login',['as'=>'login','uses'=>'LoginController@submit_login']);
 
 // Route::get('regis','LoginController@login');
 Route::get('/regis', 'RegistrationController@regis')->name('regis');
-Route::post('xulyregis',['as'=>'regis','uses'=>'RegistrationController@submit_regis']);
+Route::post('regis',['as'=>'regis','uses'=>'RegistrationController@submit_regis']);
 
 Route::get('/change', 'ChangePasswordController@change')->name('change');
 Route::post('change',['as'=>'change','uses'=>'ChangePasswordController@submit_change']);
@@ -36,3 +36,6 @@ Route::post('change',['as'=>'change','uses'=>'ChangePasswordController@submit_ch
 Route::get('redirect/{id}','MyController@redirect');
 
 Route::get('showuser','ShowUserController@showuser');
+
+Route::get('edituser','EditUserController@edituser');
+Route::post('editusers','EditUserController@editusers');

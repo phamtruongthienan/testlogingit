@@ -13,12 +13,12 @@ class LoginController extends Controller
     }
     public function submit_login(Request $request){
         $rules = [
-          'username' => 'required|min:5|max:20',
-          'password' => 'required|min:6|max:30'
+          'username' => 'required|min:5|max:15',
+          'password' => 'required|min:6|max:20'
         ];
         $validator = Validator::make($request->all(),$rules);
         if($validator->fails()){
-          return $validator->errors()->first();
+          return view('login.login',['comment'=>$validator->errors()->first()]);
         }else{
           try{
             $username = $request->username;
@@ -26,12 +26,10 @@ class LoginController extends Controller
               if(Auth::attempt(['username' => $username, 'password' => $pass])){
                 return view('wrapper');
               }else{
-                $_SESSION['error'] = "Sai thông tin đăng nhập";
-                return view('login.login');
-                //   return "Tai khoan khong chinh xac!";
+                return view('login.login',['comment'=>"Sai thông tin đăng nhập"]);
               };
           }catch(\Exception $ex){
-            
+            return view('login.login',['comment'=>"exception"]);
           }
         }
      
