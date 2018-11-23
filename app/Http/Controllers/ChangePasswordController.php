@@ -41,8 +41,8 @@ class ChangePasswordController extends Controller
                 'raw_password' => $password,
                 'status'   => 1
             ];
-            User::update($user)->where('username',$username);
-            return 'Thêm thành công!';
+            User::where('username',$username)->update($user);
+            return 'Sửa thành công!';
         }
     }
 }
