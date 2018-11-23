@@ -27,21 +27,15 @@
         <div class="row justify-content-center">
             <div class="col-6 ">
                 <h2 class="text-center">Login</h2>
-                <?php
-                if(isset($_SESSION['error'])):
-                ?>
+                @if(isset($comment))
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                    <?php 
-                        echo $_SESSION['error'];
-                        unset($_SESSION['error']);
-                    ?>
+                     {{$comment}}
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <?php
-                endif            
-                ?>
+
+                @endif
                 <form action="login" method="post" class="formLogin">
                     <div class="form-group">
                         <label for="username">Username:</label>
@@ -90,7 +84,7 @@
                     maxlength:"Tài khoản quá dài"
                 },
                 password: {
-                    required: "Vui lòng nhập tài khoản",
+                    required: "Vui lòng nhập mật khẩu",
                     minlength: "Mật khẩu  quá ngắn",
                     maxlength:"Mật khẩu quá dài"
                 }

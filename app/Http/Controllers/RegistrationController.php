@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Model\User;
+use Validator;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
@@ -23,24 +24,33 @@ class RegistrationController extends Controller
         $username = $request->username;
         $password = $request->password;
         $confirm = $request->confirm;
-       
-        $check = User::where('username',$username)->first();
-        if($check){
-            $_SESSION['error'] = "Tài khoản đã tồn tại";
-            return view('login.registration');
-            // return "da ton tai username";
-        } else if($password!=$confirm){
-            $_SESSION['error'] = "Mật khẩu không trùng";
-            return view('login.registration');
-        }else{
-            $user = [
-                'username' => $request->username,
-                'password' => Hash::make($request->password),
-                'raw_password' => $request->password,
-                'status'   => 1
-            ];
-            User::insert($user);
-            return 'Thêm thành công!';
-        }
+        $rules = array(
+            'username' => 'required|min:5|max:15',
+            'password'=> 'required|min:6|max:20',
+            'confirm'=>"required|min:6|max:20|same:password"
+        );
+        $validator = Validator::make($request->all(), $rules);
+        if ($validator->fails()) {
+                return view('login.registration',['comment'=>"Lỗi validator!"]);
+        } else {
+            try {
+                $check = User::where('username',$username)->first();
+                if($check == true) {
+                    return view('login.registration',['comment'=>'Đã tồn tại tài khoản']);
+                } else {
+                    $user = [
+                        'username' => $request->username,
+                        'password' => Hash::make($request->password),
+                        'raw_password' => $request->password,
+                        'status'   => 1
+                    ];
+                    User::insert($user);
+                    return view('login.registration',['comment'=>"Đăng ký thành công!"]);
+                }
+            } catch (\Exception $e) {
+            //    return response()->json(['error' => 'There are some errors.']);
+                return "exception";
+            }
+        } 
     }
 }
