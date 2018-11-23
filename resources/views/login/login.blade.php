@@ -31,11 +31,11 @@
                 <form action="login" method="post" >
                     <div class="form-group">
                         <label for="username">Username:</label>
-                        <input type="text" name="username" placeholder="Enter username" class="form-control">
+                        <input type="text" name="username" placeholder="Enter username" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="username">Password:</label>
-                        <input type="password" name="password" placeholder="Enter password" class="form-control">
+                        <input type="password" name="password" placeholder="Enter password" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <input type="checkbox" id="rememeber" name="remember" value="1">

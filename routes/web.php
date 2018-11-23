@@ -32,3 +32,7 @@ Route::post('xulyregis',['as'=>'regis','uses'=>'RegistrationController@submit_re
 
 Route::get('/change', 'ChangePasswordController@change')->name('change');
 Route::post('change',['as'=>'change','uses'=>'ChangePasswordController@submit_change']);
+
+Route::get('redirect/{id}','MyController@redirect');
+
+Route::get('showuser','ShowUserController@showuser');

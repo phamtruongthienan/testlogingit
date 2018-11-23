@@ -31,4 +31,19 @@ class MyController extends Controller
     public function logout(){
         Auth::logout();
     }
+
+    public function redirect($id){
+        try{
+            $user = User::where('id',$id)->first();
+            if($user){
+                return view('view_demo',['b'=>$user]);
+            }else{
+               
+            }
+            
+        }catch(\Exception $ex){
+            return "Xay ra loi trong qua trinh xu ly";
+        }
+       
+    }
 }
