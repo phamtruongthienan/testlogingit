@@ -1,15 +1,16 @@
-@extends('wrapper')
-@section('content')
-<!-- <div>
-    <form action="{{route('login')}}" method="post">
-        Username:<input type="text"  name="username">
-        password: <input type="password" name="password">
-        <button type="submit">Login</button>
-        {!! csrf_field() !!}
-    </form>
-</div> -->
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+<?php session_start();?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+</head>
 <style>
 #password-error{
     color: #856404;
@@ -34,7 +35,6 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-
                 @endif
                 <form action="login" method="post" class="formLogin">
                     <div class="form-group">
@@ -93,12 +93,3 @@
     });
     </script>
 
-@endsection
-
-@section('a')
-<style>
-    .a{
-        color:red;
-    }
-</style>
-@endsection
