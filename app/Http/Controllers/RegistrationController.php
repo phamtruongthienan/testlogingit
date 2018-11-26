@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Model\User;
 use Validator;
+use DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
@@ -34,20 +35,29 @@ class RegistrationController extends Controller
                 return view('login.registration',['comment'=>"Lỗi validator!"]);
         } else {
             try {
+                DB::beginTransaction();
                 $check = User::where('username',$username)->first();
                 if($check == true) {
                     return view('login.registration',['comment'=>'Đã tồn tại tài khoản']);
                 } else {
-                    $user = [
+                    $user_input = [
                         'username' => $request->username,
                         'password' => Hash::make($request->password),
                         'raw_password' => $request->password,
                         'status'   => 1
                     ];
-                    User::insert($user);
-                    return view('login.registration',['comment'=>"Đăng ký thành công!"]);
+                    $user = User::create($user_input);
+                    if($user){
+                        DB::commit();
+                        $data_user = User::all();
+                        return view('showuser',['infor'=>'Thêm tài khoản thành công','data'=>$data_user]);
+                    } else {
+                        DB::rollback();
+                        return view('login.registration',['comment'=>"Lỗi validator!"]);
+                    }    
                 }
             } catch (\Exception $e) {
+                DB::rollback();
             //    return response()->json(['error' => 'There are some errors.']);
                 return "exception";
             }
