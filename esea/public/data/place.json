@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "city": "Hồ Chí Minh",
+      "district": "Bình Thạnh",
+      "ward": "Phường 1"
+    }, 
+    {
+      "id": "2",
+      "city": "Hồ Chí Minh",
+      "district": "Tân Phú",
+      "ward": "Phường 2"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "img": "img\/avatar.png",
+      "type": "Mở cửa sổ mới",
+      "content": "Khuyến mãi giảm 20% mùa khai giảng.",
+      "position": "Đầu trang",
+      "specify": "Tất cả trang",
+      "link": "https://www.kiddi.vn/ho-chi-minh/truong-mam-non-quoc-te-kindy-city-cong-hoa",
+      "status": 1
+    }, 
+    {
+      "id": "2",
+      "img": "img\/avatar2.png",
+      "type": "Modal popup",
+      "content": "Khuyến mãi giảm 20% mùa khai giảng.",
+      "position": "Cuối trang",
+      "specify": "Chỉ trang chi tiết trường",
+      "link": "https://www.kiddi.vn/ho-chi-minh/truong-mam-non-quoc-te-sai-gon-academy-nguyen-thai-binh",
+      "status": 0
+    }
+  ]
+}
