@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "smtp": "SMTP server",
+      "port": "Port",
+      "username": "Username",
+      "password": "Password",
+      "protocal": "Protocal",
+      "sender": "Sender name",
+      "default": "1"
+    }, 
+    {
+      "id": "1",
+      "smtp": "SMTP server",
+      "port": "Port",
+      "username": "Username",
+      "password": "Password",
+      "protocal": "Protocal",
+      "sender": "Sender name",
+      "default": "0"
+    }
+  ]
+}

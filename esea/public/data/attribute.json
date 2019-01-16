@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Convenient Transportation",
+      "group": "Cở sở vật chất",
+      "value": "true",
+      "unit": "",
+      "active": 1
+    }, 
+    {
+      "id": "2",
+      "name": "Camera",
+      "group": "Sự kiện",
+      "value": "true",
+      "unit": "",
+      "active": 1
+    },
+    {
+      "id": "3",
+      "name": "Elevator",
+      "group": "Trang thiết bị hiện đại",
+      "value": "false",
+      "unit": "",
+      "active": 1
+    }, 
+    {
+      "id": "4",
+      "name": "English Course",
+      "group": "Chăm sóc Sức khỏe",
+      "value": "2,300,000 VNĐ",
+      "unit": "/ tháng",
+      "active": 1
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123456",
+      "name": "Nguyễn Văn A",
+      "birthday": "2018-09-10",
+      "DOB": "",
+      "phone": "01211189994",
+      "position": "Nhân viên"
+    }, 
+    {
+      "id": "1",
+      "username": "user",
+      "password": "123456",
+      "name": "Nguyễn Hồng Anh",
+      "birthday": "2018-09-10",
+      "DOB": "",
+      "phone": "01255587774",
+      "position": "Giám thị"
+    }
+  ]
+}

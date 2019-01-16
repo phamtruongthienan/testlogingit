@@ -1,0 +1,38 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Tiếng Việt",
+      "img": "default\/def8.jpg",
+      "code": "vn",
+      "currency": "VNĐ",
+      "time": "2015-11-30",
+      "enable": 1
+    }, 
+    {
+      "id": "2",
+      "name": "English",
+      "img": "default\/def2.jpg",
+      "code": "en",
+      "currency": "USD",
+      "time": "2015-11-14",      
+      "enable": 0
+    }
+  ],
+  "draw": 0,
+  "recordsTotal": 2515,
+  "recordsFiltered": 2515,
+  "queries": [
+    {
+      "query": "select count(*) as aggregate from (select '1' as `row_count` from `users` where `users`.`deleted_at` is null and `users`.`deleted_at` is null) count_row_table",
+      "bindings": [],
+      "time": 2.55
+    },
+    {
+      "query": "select `id`, `name`, `email`, `created_at`, `updated_at` from `users` where `users`.`deleted_at` is null",
+      "bindings": [],
+      "time": 16.64
+    }
+  ],
+  "input": []
+}
