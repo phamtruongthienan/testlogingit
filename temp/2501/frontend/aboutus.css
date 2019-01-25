@@ -1,0 +1,260 @@
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.header{
+    display: flex;
+    padding-bottom: 10px; 
+    background-image: url(../images/abc.JPG);
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    height: 80px;
+    z-index: 1;
+}
+
+.header-1 a{
+    color: #646464;
+}
+
+.header-1 a:hover{
+    color: #f03f3f;
+    
+}
+
+.header .image{
+    margin-left: 10px;
+    height: 80px;
+}
+.header-1 {
+    display: flex;
+}
+.header-2 {
+    display: flex;
+    Justify-content: flex-end; 
+    flex-grow: 1 ;
+}
+.header-2 a , [class*="hitem"]{
+    height: 80px;
+    line-height: 80px;
+    margin-left: 25px;
+    color: #646464;
+    font-size: 16px;
+    font-family: mallory,Helvetica Neue,Helvetica,Arial,sans-serif;
+    opacity: 0.8;
+}
+
+.header-2 .dangky{
+    width: 100px;
+    padding: 12px 10px;
+    cursor: pointer;
+    border: 1px solid #8dc63f;
+    height: 35px !important;
+    line-height: 10px;
+    margin-top: 22px;
+    text-align: center;
+    margin-right: 20px;
+    color: #8dc63f;
+}
+.header-2 .dangky:hover{
+    background-image: linear-gradient(45deg, #0089cf, #8dc63f);
+    color: #ffffff;
+}
+
+.line{
+    width: 1px;
+    height: 45px;
+    background: gray;
+    margin-left: 13px;
+    margin-top: 20px;
+}
+
+.banner{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .74), rgba(0, 0, 0, .19)), url(../images/DSCF1393.JPG);
+    background-position: 0px 0px, 50% 58%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    display: block;
+    padding: 220px 15px 70px;
+    width: 100%;
+}
+
+.m-container {
+    width: 1130px;
+    margin: 0 auto;  
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.mc-cover{
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+.title {
+    color:white;
+    width: 50%;
+}
+
+.item-left {
+    width: 70%;
+    padding: 20px 40px 20px 0px;
+    text-align: justify!important;
+    font-size: 14px;
+    color: #646464;
+    display: inline-block;
+}
+
+.main {
+    background-color: black;
+}
+
+.item-right {
+    display: flex;
+    flex-direction: column;
+    margin-top: -240px;
+    flex: 1;
+}
+
+.s-image{
+    background-image: url(../images/40875928_2204888443164426_2548217651633586176_o.jpg), linear-gradient(180deg, #ffb09a, #ffed8d);
+    padding-top: 110px;
+    padding-bottom: 110px;
+    background-size: cover, auto;
+}
+
+.sidebar{
+    background-color: #333333;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    box-shadow: 5px 6px 50px;
+}
+
+.sidebar a{
+    display: block;
+    width: 100%;
+    padding:15px 20px;
+    color: white;
+}
+
+.sidebar a:hover {
+    background-color: rgba(8, 235, 95, 0.2);
+    color: white;
+}
+
+.item-right-1 {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    position: sticky;
+    top: 80px;
+}
+
+.footer .ft-1 {
+    background-image: linear-gradient(180deg, #8dc63f, #00c7cf 98%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ft-1-m {
+    width: 1130px !important;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.ft-dangky input{
+    color: #333333;
+    border: 1px solid #cccccc;
+    width: 265px;
+    height: 45px;
+}
+
+.ft-dangky button{
+    height: 45px;
+    width: 120px;
+    background-image: linear-gradient(45deg, #f04e23, #ffd600);
+    border: none;
+}
+
+.ft-item{
+    max-width: 1130px;
+}
+
+.ft-1-m-t {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.ft-1-m-t strong{
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.ft-2-m {
+    display: flex;
+    justify-content: center;
+}
+
+.ftmm{
+    width: 1130px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    padding: 40px 10px;
+    
+}
+
+.ftmm a , .ftmm div{
+    width: 265px;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.ft-3 {
+    background-image: linear-gradient(180deg, #f04e23, #f04e23);
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.hotline p{
+    float: left;
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 5px;
+}
+
+.ftmm a {
+    color: #8f8f8f;
+    font-size: 16px;
+}
+
+.hotline a{
+    font-size: 20px;
+    font-weight: 300;
+    color: red;
+}
+
+.mau {
+    font-family: mallory,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #646464;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.maudo {
+    font-family: mallory,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #f13232;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 200;
+}

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/school.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="header">
+        <div class="image"><a href="index.html" class="brand w-nav-brand "><img src="images/logo.svg" width="150"
+                    height="100" alt="" class="image"></a></div>
+        <div class="header-1">
+            <div class="line"></div>
+            <div class="hitem"><a href="#">Trường & khóa học</a></div>
+            <div class="hitem"><a href="#">Ưu đãi</a></div>
+            <div class="hitem"><a href="#">Về chúng tôi</a></div>
+            <div class="hitem"><a href="#">Liên hệ</a></div>
+        </div>
+        <div class="header-2">
+            <a href="#">ĐĂNG NHẬP</a>
+            <a href="#" class="dangky">ĐĂNG KÝ</a>
+        </div>
+    </div>
+    <div class="ggmap">
+        <div class="mapitem">
+            <button>X</button>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.071311900063!2d106.66402431533425!3d10.805850261603414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752924eb08e847%3A0xccf59769d73a3322!2sARIS+Vietnam!5e0!3m2!1svi!2s!4v1548317899087" width="90%" height="750px" frameborder="0" style="border:0" allowfullscreen ></iframe>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="container-left">
+                <div class="map">Bản đồ</div>
+                <div class="container-left-2">
+                    <div class="container-color">
+                        <form id="email-form" name="email-form" data-name="Email Form">
+                            <label for="name" class="main-form-lab">Từ khóa</label>
+                            <input placeholder="search" class="main-form-inp-0" />
+                            <label for="name" class="main-form-lab">Location</label>
+                            <input placeholder="Ho Chi Minh" class="main-form-inp-1" />
+                            <label for="email-3" class="main-form-lab">Level</label>
+                            <select placeholder="Primary" class="main-form-select-1 options">
+                                <option data-description="Description with Facebook">Facebook</option>
+                                <option data-description="Description with Twitter">Twitter</option>
+                                <option data-description="Description with Google">Google</option>
+                                <option data-description="Description with Google+">Google++++</option>
+                            </select>
+                            <label for="email-3" class="main-form-lab">Language</label>
+                            <select placeholder="English" class="main-form-select-2 options02">
+                                <option data-description="Description with Facebook abc">Facebook abc</option>
+                                <option data-description="Description with Twitter">Twitter abc</option>
+                                <option data-description="Description with Google">Google abc</option>
+                                <option data-description="Description with Google+">Google++++</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="a2">
+                        <strong> Đánh giá: </strong>
+                        <div>
+                            <label>
+                                <input type="radio" name="star" />
+                                <i class="fas fa-star text-warning"></i>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" name="star" />
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </label></div>
+                        <div>
+                            <label>
+                                <input type="radio" name="star" />
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </label></div>
+                        <div>
+                            <label>
+                                <input type="radio" name="star" />
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </label></div>
+                        <div>
+                            <label>
+                                <input type="radio" name="star" />
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </label></div>
+                    </div>
+                    <div class="a2">
+                        <strong>Học phí: </strong>
+                        <div>
+                            <label>
+                                <input type="radio" name="price" />  1 - 5 triệu
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" name="price" /> 5 - 10 triệu
+                            </label></div>
+                        <div>
+                            <label>
+                                <input type="radio" name="price" /> 10 - 15 triệu
+                            </label></div>
+                        <div>
+                            <label>
+                                <input type="radio" name="price" /> 15 triệu +
+                            </label></div>
+                    </div>
+                    <div class="a2">
+                        <strong>Tiện ích:</strong>
+                        <div>
+                            
+                            <label>
+                                <input type="checkbox" /> Giờ học muộn
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" /> Xe bus
+                            </label></div>
+                        <div>
+                            <label>
+                                <input type="checkbox" /> Hồ bơi
+                            </label></div>
+                        <div>
+                            <label>
+                                <input type="checkbox" /> Khu vui chơi
+                            </label></div>
+                        <div>
+                            <label>
+                                <input type="checkbox" /> Khu vực ngoài trời
+                            </label></div>
+                        <div>
+                            <label>
+                                <input type="checkbox" /> Phòng gym
+                            </label></div>
+                        <div>
+                            <label>
+                                <input type="checkbox" /> Phòng bếp
+                            </label></div>
+                        <div>
+                            <label>
+                                <input type="checkbox" /> Phòng ăn
+                            </label></div>
+                        <div>
+                            <label>
+                                <input type="checkbox" /> Phòng y tế
+                            </label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-right">
+                <div class="cr3">
+                    <a href="#">
+                        <label class="icon-l"></label>
+                        Học phí từ thấp đến cao</a>
+                    <a href="#">
+                        <label class="icon-h"></label>
+                        Học phí từ cao đến thấp</a>
+                    <a href="#">
+                        <label class="icon-n"></label>
+                        Gần tôi</a>
+                </div>
+                <div class="cr4">
+                    <a href="http://getbootstrap.com.vn/css/" class="link">
+                        <div class="image"></div>
+                    </a>
+                </div>
+                <div class="cr5 row">
+                    <div class="cr5-l col"></div>
+                    <div class="cr5-m col-6">
+                        <div class="cr5-m-1">
+                            <h5>
+                                <a href="https://www.google.com.vn/">Trường THPT Phan Chu Trinh</a>
+                            </h5>
+                            <div>
+                                <label>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="cr5-m-2">
+                            <div class="m-2-item">
+                                <div class="icon-kv"></div>
+                                <div class="item-text">Hà Nội</div>
+                            </div>
+                            <div class="m-2-item">
+                                <div class="icon-lev"></div>
+                                <div class="item-text">Preschools</div>
+                            </div>
+                            <div class="m-2-item">
+                                <div class="icon-lang"></div>
+                                <div class="item-text">Anh, Hoa, Hàn</div>
+                            </div>
+                        </div>
+                        <div class="hover-school-1" id="show-rating-1">
+                            <div id="w-node" class="hover-rating" >
+                                <div class="rating-text">Cơ sở vật chất: <strong class="bold">6/10</strong></div>
+                                    <div class="rating-m">
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                       
+                                    <div class="rating-i grey"></div>
+                                </div>
+                                <div class="rating-text">Cơ sở vật chất: <strong class="bold">7/10</strong></div>
+                                    <div class="rating-m">
+                                       
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                    <div class="rating-i grey"></div>
+                                </div>
+                                <div class="rating-text">Cơ sở vật chất: <strong class="bold">10/10</strong></div>
+                                    <div class="rating-m">
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                    <div class="rating-i grey"></div>
+                                </div>
+                                <div class="rating-text">Cơ sở vật chất: <strong class="bold">6/10</strong></div>
+                                <div class="rating-m">
+                                    <div class="rating-i"></div>
+                                    <div class="rating-i"></div>
+                                    <div class="rating-i"></div>
+                                    <div class="rating-i"></div>
+                                    <div class="rating-i"></div>
+                                    <div class="rating-i"></div>
+                                <div class="rating-i grey"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="cr5-m-3">
+                            <div class="icon"></div>
+                            <a href="https://www.google.com.vn/">19 Hoa Bằng, Tân Sơn Nhì, Tân Phú, Hồ Chí Minh, Việt
+                                Nam</a>
+                        </div>
+                        <p>
+                            Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang
+                            phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn...
+                        </p>
+                        <div class="icon">
+                            <div class="icon-1"></div>
+                            <div class="icon-2"></div>
+                            <div class="icon-3"></div>
+                            <div class="icon-4"></div>
+                            <div class="icon-5"></div>
+                            <div class="icon-6"></div>
+                            <div class="icon-7"></div>
+                        </div>
+                    </div>
+                    <div class="cr5-r col">
+                        <div class="cr5-r-t">
+                            <div class="cr5-r-t-t1">7/10</div>
+                            <div class="cr5-r-t-d"><label style='color: red;'>13</label> đánh giá</div>
+                        </div>
+                        <a href="#">Xem thêm</a>
+                    </div>
+                </div>
+                <div class="cr5 row">
+                    <div class="cr5-l col"></div>
+                    <div class="cr5-m col-6">
+                        <div class="cr5-m-1">
+                            <h5>
+                                <a href="https://www.google.com.vn/">Trường THPT Phan Chu Trinh</a>
+                            </h5>
+                            <div>
+                                <label>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="cr5-m-2">
+                            <div class="m-2-item">
+                                <div class="icon-kv"></div>
+                                <div class="item-text">Hà Nội</div>
+                            </div>
+                            <div class="m-2-item">
+                                <div class="icon-lev"></div>
+                                <div class="item-text">Preschools</div>
+                            </div>
+                            <div class="m-2-item">
+                                <div class="icon-lang"></div>
+                                <div class="item-text">Anh, Hoa, Hàn</div>
+                            </div>
+                        </div>
+                        <div class="hover-school-2" id="show-rating-1">
+                                <div id="w-node" class="hover-rating" >
+                                    <div class="rating-text">Cơ sở vật chất: <strong class="bold">6/10</strong></div>
+                                        <div class="rating-m">
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                           
+                                        <div class="rating-i grey"></div>
+                                    </div>
+                                    <div class="rating-text">Cơ sở vật chất: <strong class="bold">7/10</strong></div>
+                                        <div class="rating-m">
+                                           
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                        <div class="rating-i grey"></div>
+                                    </div>
+                                    <div class="rating-text">Cơ sở vật chất: <strong class="bold">10/10</strong></div>
+                                        <div class="rating-m">
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                        <div class="rating-i grey"></div>
+                                    </div>
+                                    <div class="rating-text">Cơ sở vật chất: <strong class="bold">6/10</strong></div>
+                                    <div class="rating-m">
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                    <div class="rating-i grey"></div>
+                                </div>
+                                </div>
+                            </div>
+                        <div class="cr5-m-3">
+                            <div class="icon"></div>
+                            <a href="https://www.google.com.vn/">19 Hoa Bằng, Tân Sơn Nhì, Tân Phú, Hồ Chí Minh, Việt
+                                Nam</a>
+                        </div>
+                        <p>
+                            Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang
+                            phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn...
+                        </p>
+                        <div class="icon">
+                            <div class="icon-1"></div>
+                            <div class="icon-2"></div>
+                            <div class="icon-3"></div>
+                            <div class="icon-4"></div>
+                            <div class="icon-5"></div>
+                            <div class="icon-6"></div>
+                            <div class="icon-7"></div>
+                        </div>
+                    </div>
+                    <div class="cr5-r col">
+                        <div class="cr5-r-t">
+                            <div class="cr5-r-t-t2">7/10</div>
+                            <div class="cr5-r-t-d"><label style='color: red;'>13</label> đánh giá</div>
+                        </div>
+                        <a href="#">Xem thêm</a>
+                    </div>
+                </div>
+                <div class="cr4">
+                    <a href="http://getbootstrap.com.vn/css/" class="link">
+                        <div class="image"></div>
+                    </a>
+                </div>
+                <div class="cr5 row">
+                    <div class="cr5-l col"></div>
+                    <div class="cr5-m col-6">
+                        <div class="cr5-m-1">
+                            <h5>
+                                <a href="https://www.google.com.vn/">Trường THPT Phan Chu Trinh</a>
+                            </h5>
+                            <div>
+                                <label>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="cr5-m-2">
+                            <div class="m-2-item">
+                                <div class="icon-kv"></div>
+                                <div class="item-text">Hà Nội</div>
+                            </div>
+                            <div class="m-2-item">
+                                <div class="icon-lev"></div>
+                                <div class="item-text">Preschools</div>
+                            </div>
+                            <div class="m-2-item">
+                                <div class="icon-lang"></div>
+                                <div class="item-text">Anh, Hoa, Hàn</div>
+                            </div>
+                        </div>
+                        <div class="hover-school-3" id="show-rating-1">
+                                <div id="w-node" class="hover-rating" >
+                                    <div class="rating-text">Cơ sở vật chất: <strong class="bold">6/10</strong></div>
+                                        <div class="rating-m">
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                           
+                                        <div class="rating-i grey"></div>
+                                    </div>
+                                    <div class="rating-text">Cơ sở vật chất: <strong class="bold">7/10</strong></div>
+                                        <div class="rating-m">
+                                           
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                        <div class="rating-i grey"></div>
+                                    </div>
+                                    <div class="rating-text">Cơ sở vật chất: <strong class="bold">10/10</strong></div>
+                                        <div class="rating-m">
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                            <div class="rating-i"></div>
+                                        <div class="rating-i grey"></div>
+                                    </div>
+                                    <div class="rating-text">Cơ sở vật chất: <strong class="bold">6/10</strong></div>
+                                    <div class="rating-m">
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                    <div class="rating-i grey"></div>
+                                </div>
+                                </div>
+                            </div>
+                        <div class="cr5-m-3">
+                            <div class="icon"></div>
+                            <a href="https://www.google.com.vn/">19 Hoa Bằng, Tân Sơn Nhì, Tân Phú, Hồ Chí Minh, Việt
+                                Nam</a>
+                        </div>
+                        <p>
+                            Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang
+                            phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn...
+                        </p>
+                        <div class="icon">
+                            <div class="icon-1"></div>
+                            <div class="icon-2"></div>
+                            <div class="icon-3"></div>
+                            <div class="icon-4"></div>
+                            <div class="icon-5"></div>
+                            <div class="icon-6"></div>
+                            <div class="icon-7"></div>
+                        </div>
+                    </div>
+                    <div class="cr5-r col">
+                        <div class="cr5-r-t">
+                            <div class="cr5-r-t-t3">7/10</div>
+                            <div class="cr5-r-t-d"><label style='color: red;'>13</label> đánh giá</div>
+                        </div>
+                        <a href="#">Xem thêm</a>
+                    </div>
+                </div>
+                <div class="cr5 row">
+                    <div class="cr5-l col"></div>
+                    <div class="cr5-m col-6">
+                        <div class="cr5-m-1">
+                            <h5>
+                                <a href="https://www.google.com.vn/">Trường THPT Phan Chu Trinh</a>
+                            </h5>
+                            <div>
+                                <label>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="cr5-m-2">
+                            <div class="m-2-item">
+                                <div class="icon-kv"></div>
+                                <div class="item-text">Hà Nội</div>
+                            </div>
+                            <div class="m-2-item">
+                                <div class="icon-lev"></div>
+                                <div class="item-text">Preschools</div>
+                            </div>
+                            <div class="m-2-item">
+                                <div class="icon-lang"></div>
+                                <div class="item-text">Anh, Hoa, Hàn</div>
+                            </div>
+                        </div>
+                         <div class="hover-school-4" id="show-rating-1">
+                            <div id="w-node" class="hover-rating" >
+                                <div class="rating-text">Cơ sở vật chất: <strong class="bold">6/10</strong></div>
+                                    <div class="rating-m">
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                       
+                                    <div class="rating-i grey"></div>
+                                </div>
+                                <div class="rating-text">Cơ sở vật chất: <strong class="bold">7/10</strong></div>
+                                    <div class="rating-m">
+                                       
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                    <div class="rating-i grey"></div>
+                                </div>
+                                <div class="rating-text">Cơ sở vật chất: <strong class="bold">10/10</strong></div>
+                                    <div class="rating-m">
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                        <div class="rating-i"></div>
+                                    <div class="rating-i grey"></div>
+                                </div>
+                                <div class="rating-text">Cơ sở vật chất: <strong class="bold">6/10</strong></div>
+                                <div class="rating-m">
+                                    <div class="rating-i"></div>
+                                    <div class="rating-i"></div>
+                                    <div class="rating-i"></div>
+                                    <div class="rating-i"></div>
+                                    <div class="rating-i"></div>
+                                    <div class="rating-i"></div>
+                                <div class="rating-i grey"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="cr5-m-3">
+                            <div class="icon"></div>
+                            <a href="https://www.google.com.vn/">19 Hoa Bằng, Tân Sơn Nhì, Tân Phú, Hồ Chí Minh, Việt
+                                Nam</a>
+                        </div>
+                        <p>
+                            Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang
+                            phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn...
+                        </p>
+                        <div class="icon">
+                            <div class="icon-1"></div>
+                            <div class="icon-2"></div>
+                            <div class="icon-3"></div>
+                            <div class="icon-4"></div>
+                            <div class="icon-5"></div>
+                            <div class="icon-6"></div>
+                            <div class="icon-7"></div>
+                        </div>
+                    </div>
+                    <div class="cr5-r col">
+                        <div class="cr5-r-t">
+                            <div class="cr5-r-t-t4">7/10</div>
+                            <div class="cr5-r-t-d"><label style='color: red;'>13</label> đánh giá</div>
+                        </div>
+                        <a href="#">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="ft-1">
+            <div class="ft-1-m">
+                <div class="cmm">
+                    <div class="ft-1-m-t ft-item">
+                        Đăng ký nhận
+                        <strong>
+                            Ưu đãi & Tin tức
+                        </strong>
+                        mỗi ngày
+                    </div>
+                    <div class="ft-dangky ft-item" style="text-align: center">
+                        <div style="display: inline-block">
+                            <input type="email" style="float: left; padding-left: 10px; " placeholder="Nhập địa chỉ email">
+                            <button style="float: left">Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ft-2">
+            <div class="ft-2-m">
+                <div class="ftmm">
+                    <a href="#">Đặt cho chuyến thăm</a>
+                    <a href="#">Ưu đãi</a>
+                    <a href="#">Về chugns tôi</a>
+                    <div class="hotline">
+                        <p>Hotline: </p>
+                        <a href=""> 08345556144</a>
+                    </div>
+                    <a href="#">Trường & khóa học</a>
+                    <a href="#">Sơ đồ trang</a>
+                    <a href="#">Liên hệ</a>
+                    <div>
+                        <a href=""><img src="http://localhost/assets/frontend/images/fb.png"></a>
+                        <a href=""><img src="http://localhost/assets/frontend/images/gg.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ft-3">
+            <div class="textft">Công ty TNHH ARIS Việt Nam. All Rights Reserved.</div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<!-- <script src="js/school.js"></script> -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js"></script>
+<script>
+    //$('.hover-rating').css('display', 'none');
+    $('.options').ddslick();
+    $('.options02').ddslick();
+    $( ".cr5-r-t-t1" ).hover(
+    function() {
+        $('.hover-school-1').css('display', 'block');
+    }, function() {
+        $('.hover-school-1').css('display', 'none');
+        }
+    );
+
+    $( ".cr5-r-t-t2" ).hover(
+    function() {
+        $('.hover-school-2').css('display', 'block');
+    }, function() {
+        $('.hover-school-2').css('display', 'none');
+        }
+    );
+    
+    $( ".cr5-r-t-t3" ).hover(
+    function() {
+        $('.hover-school-3').css('display', 'block');
+    }, function() {
+        $('.hover-school-3').css('display', 'none');
+        }
+    );
+
+    $( ".cr5-r-t-t4" ).hover(
+    function() {
+        $('.hover-school-4').css('display', 'block');
+    }, function() {
+        $('.hover-school-4').css('display', 'none');
+        }
+    );
+
+    $( ".map" ).click(
+    function() {
+        $('.ggmap').css('display', 'block');
+    }
+    );
+
+    $( ".mapitem button" ).click(
+    function() {
+        $('.ggmap').css('display', 'none');
+    }
+    );
+
+</script>
