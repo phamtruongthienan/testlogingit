@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Nguyễn Văn A",
+      "object": "Trường học chỉ định",
+      "time": "09/14/2018 - 09/14/2018",
+      "discount": "10%",
+      "code": "ABC",
+      "show": "1"
+    },
+    {
+      "id": "2",
+      "name": "Nguyễn Văn B",
+      "object": "eSearch",
+      "time": "09/14/2018 - 09/14/2018",
+      "discount": "100000 VNĐ",
+      "code": "XYZ",
+      "show": "0"
+    }
+  ]
+}

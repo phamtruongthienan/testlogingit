@@ -1,0 +1,8 @@
+{
+    "/js-mix/bootstrap.min.js": "/js-mix/bootstrap.min.js",
+    "/js-mix/jquery.cookie.min.js": "/js-mix/jquery.cookie.min.js",
+    "/js-mix/placeholders.min.js": "/js-mix/placeholders.min.js",
+    "/js-mix/popper.min.js": "/js-mix/popper.min.js",
+    "/js-mix/tooltipster-for-webflow.js": "/js-mix/tooltipster-for-webflow.js",
+    "/js-mix/tooltipster.bundle.min.js": "/js-mix/tooltipster.bundle.min.js"
+}

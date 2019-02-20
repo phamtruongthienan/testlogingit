@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Contact",
+      "layout": "One column",
+      "active": "1"
+    }, 
+    {
+      "id": "1",
+      "name": "Contact",
+      "layout": "One column",
+      "active": "0"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+/*
+	Author: John Stewart
+	Version: 0.1
+*/
+
+/*Clearfix for the user to use for containing divs.*/
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+div[class*='stack'] {
+    float: left;
+    position: relative;
+    margin: 50px;
+}
+ 
+div[class*='stack'], div[class*='stack']:before, div[class*='stack']:after {
+    border: 6px solid #fff;
+    height: 200px; 
+    width: 200px;
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+ 
+div[class*='stack']:before, div[class*='stack']:after {
+    background: #768590;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -6px;
+    top: 0;
+}
+div[class*='stack']:before {
+    background: #eff4de; 
+}
+/*Neat class styles.*/
+div[class*='neat']:before{
+    left: -6px;
+    top: 6px;
+}
+div[class*='neat']:after{
+    left: -6px;
+}
+/*Left Class styles.*/
+div[class*='left']:before{
+    left: -10px;
+    top: 10px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+div[class*='left']:after{
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+}
+/*Right Class Styles*/
+div[class*='right']:before{
+    left: 0px;
+    top: 10px;
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -o-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    transform: rotate(8deg);
+}
+div[class*='right']:after{
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
+/*Messy Class Styles*/
+div[class*='messy']:before{
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+}
+div[class*='messy']:after{
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    transform: rotate(6deg);
+}

@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "email": "admin@gmail.com",
+      "name": "Nguyễn Văn A",
+      "phone": "01211189994",
+      "active": 1,
+      "address": "Tân bình",
+      "sort": 1
+    }, 
+    {
+      "id": "2",
+      "email": "admin@gmail.com",
+      "name": "Nguyễn Văn B",
+      "phone": "01211189994",
+      "active": 0,
+      "address": "Bình thạnh",
+      "sort": 2
+    }, 
+    {
+      "id": "3",
+      "email": "admin@gmail.com",
+      "name": "Nguyễn Văn C",
+      "phone": "01211189994",
+      "active": 1,
+      "address": "Tân Phú",
+      "sort": 3
+    }
+  ]
+}

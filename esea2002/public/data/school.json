@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Trung tâm ila",
+      "level": "PRESCHOOLS",
+      "type": "Internatinal",
+      "district": "Bình thạnh"
+    }, 
+    {
+      "id": "2",
+      "name": "Trung tâm Hello",
+      "level": "KINGDERGARTEN",
+      "type": "Binglingual",
+      "district": "Tân bình"
+    }
+  ]
+}

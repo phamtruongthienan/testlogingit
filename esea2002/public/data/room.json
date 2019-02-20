@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Phòng anh văn",
+      "position": "Tầng 1"
+    }, 
+    {
+      "id": "2",
+      "name": "Phòng vi tính",
+      "position": "Tầng 2"
+    },
+    {
+      "id": "3",
+      "name": "Phòng 7",
+      "position": "Tầng 3"
+    }, 
+    {
+      "id": "4",
+      "name": "Phòng thí nghiệm",
+      "position": "Tầng 4"
+    }
+  ]
+}

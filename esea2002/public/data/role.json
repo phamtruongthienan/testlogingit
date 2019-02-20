@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Trưởng phòng",
+      "description": "Quyền hạn trưởng phòng"
+    }, 
+    {
+      "id": "2",
+      "name": "Nhân viên",
+      "description": "Quyền hạn nhân viên"
+    }
+  ]
+}

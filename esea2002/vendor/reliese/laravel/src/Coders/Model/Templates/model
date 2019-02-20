@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * Created by ARIS
+ * Date: {{date}}.
+ */
+
+namespace {{namespace}};
+
+use {{parent}} as Eloquent;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use Laravel\Scout\Searchable;
+
+/**
+ * Class {{class}}
+ * {{properties}}
+ *
+ * @package {{namespace}}
+ */
+class {{class}} extends Eloquent
+{
+    use Searchable;
+    public $asYouType = true;
+
+{{body}}
+}

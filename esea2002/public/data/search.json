@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "keyword": "Internatinal, Binglingual, Private preschool",
+      "school": "Nguyen Du High School",
+      "type": "Khu vực",
+      "name": "Bình Thạnh",
+      "sort": 1,
+      "active": 1
+    }, 
+    {
+      "id": "2",
+      "keyword": "Private preschool",
+      "school": "Nguyen Du High School",
+      "type": "Loại trường",
+      "name": "Công lập",
+      "sort": 2,
+      "active": 0
+    },
+    {
+      "id": "3",
+      "keyword": "Binglingual",
+      "school": "Nguyen Du High School",
+      "type": "Cấp trường",
+      "name": "Tiểu học",
+      "sort": 3,
+      "active": 1
+    },
+    {
+      "id": "4",
+      "keyword": "Tất cả tìm kiếm",
+      "school": "Nguyen Du High School",
+      "type": "Cấp trường",
+      "name": "Tiểu học",
+      "sort": 3,
+      "active": 1
+    }
+  ]
+}
